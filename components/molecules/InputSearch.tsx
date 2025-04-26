@@ -2,6 +2,7 @@
 
 import { Search, ShoppingCart } from "lucide-react";
 import { Input } from "../ui/input";
+import { FoodCart } from "./FoodCart";
 
 export function InputSearch() {
     return (
@@ -14,10 +15,7 @@ export function InputSearch() {
                 />
             </div>
             <span>|</span>
-            <div className="relative">
-                <ShoppingCart className="size-8 max-sm:size-6 max-[240px]:bg-red-50" />
-                <span className="absolute -top-2 -right-2 bg-primary py-[2px] px-2 text-white text-base rounded-full shadow-[0_5px_10px_0_hsl(22,90%,46%)]">2</span>
-            </div>
+           <FoodCart />
         </div>
     )
 }

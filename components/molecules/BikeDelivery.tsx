@@ -1,6 +1,6 @@
 "use client";
 
-import BikeDeliveryImg from "@/public/assets/Logo.webp";
+import BikeDeliveryImg from "@/public/assets/BikeDelivery.jpeg";
 import Image from "next/image";
 
 export function BikeDelivery(){

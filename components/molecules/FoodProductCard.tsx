@@ -22,8 +22,8 @@ export function FoodProductCard({
     onAddToCartButton
 }: Props) {
     return (
-        <div className="rounded-3xl shadow-[0_10px_25px_0px_hsl(0,0%,0%,0.15)]">
-            <Image alt={alt} src={image} width={100} height={100} className="w-full bg-gray-50 rounded-ss-3xl rounded-tr-3xl" />
+        <div className="rounded-3xl shadow-[0_10px_25px_0px_hsl(0,0%,0%,0.15)] h-96">
+            <Image alt={alt} src={image} width={100} height={100} quality={100} className="w-full h-2/3 bg-gray-200 rounded-ss-3xl rounded-tr-3xl object-cover" />
 
             <div className="p-4">
                 <div className="flex flex-row items-center justify-between">

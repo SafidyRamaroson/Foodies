@@ -69,42 +69,42 @@ export const socialsLinks = [
 
 export const popularFoods = [
     {
-        image: "/assets/burger1.png",
+        image: "/assets/Gyro.jpeg",
         alt: "Gyro Sandwhic",
         productName: "Gyro Sandwhic",
         starCount: 4.9,
         price: 15.00
     },
     {
-        image: "/assets/burger1.png",
+        image: "/assets/Enchilade.jpeg",
         alt: "Enchilade",
         productName: "Enchilade",
         starCount: 5.0,
         price: 25.50
     },
     {
-        image: "/assets/burger1.png",
+        image: "/assets/Green Beans.jpeg",
         alt: "Green Beans",
         productName: "Green Beans",
         starCount: 4.9,
         price: 12.00
     },
     {
-        image: "/assets/burger1.png",
+        image: "/assets/Pizza.jpeg",
         alt: "Pizza",
         productName: "Pizza",
         starCount: 5.0,
         price: 18.50
     },
     {
-        image: "/assets/burger1.png",
+        image: "/assets/Chicken Pot Pie.jpeg",
         alt: "Chicken Pot Pie",
         productName: "Chicken Pot Pie",
         starCount: 4.9,
         price: 25.00
     },
     {
-        image: "/assets/burger1.png",
+        image: "/assets/Green Salad.jpeg",
         alt: "Green Salad",
         productName: "Green Salad",
         starCount: 4.9,

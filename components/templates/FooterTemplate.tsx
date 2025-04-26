@@ -1,6 +1,6 @@
 "use client";
 
-import LogoImage from "@/public/assets/Logo.webp";
+import LogoImage from "@/public/assets/logo.png";
 import Image from "next/image";
 import { socialsLinks, userLinks } from "@/data";
 import { ContactUsFooter, OpeningRestauranFooter, SocialLinksFooter } from "../molecules";

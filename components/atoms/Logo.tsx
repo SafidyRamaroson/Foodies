@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import LogoImg from "@/public/assets/Logo.webp";
+import LogoImg from "@/public/assets/logo.png";
 
 
 export function Logo(){
