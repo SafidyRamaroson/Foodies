@@ -1,3 +1,5 @@
+import { Clock, Facebook, Instagram, Linkedin, MapPin, Phone } from "lucide-react"
+
 export const menuItems = [
     {
         label: "Home",
@@ -14,5 +16,117 @@ export const menuItems = [
     {
         label: "Shop",
         url: "#"
+    },
+]
+
+export const contactItems = [
+    {
+        icon: Clock,
+        label: "Working time",
+        content: "Today 10:00pm - 10:00pm"
+    },
+    {
+        icon: MapPin,
+        label: "Washington, D.C, DC, USA",
+        content: "Our Location"
+    },
+    {
+        icon: Phone,
+        label: "Phone Number",
+        content: "+0123 456 7891"
+    },
+]
+
+export const userLinks = [
+    {
+        label: "About Us",
+        url: "#"
+    },
+    {
+        label: "Contact Us",
+        url: "#"
+    },
+    {
+        label: "Order Delivery",
+        url: "#"
+    },
+    {
+        label: "Payment & Tex",
+        url: "#"
+    },
+    {
+        label: "Terms of Services",
+        url: "#"
+    }
+];
+
+export const socialsLinks = [
+    { icon: Facebook, url: "#" },
+    { icon: Facebook, url: "#" },
+    { icon: Linkedin, url: "#" },
+    { icon: Instagram, url: "#" }
+]
+
+export const popularFoods = [
+    {
+        image: "/assets/burger1.png",
+        alt: "Gyro Sandwhic",
+        productName: "Gyro Sandwhic",
+        starCount: 4.9,
+        price: 15.00
+    },
+    {
+        image: "/assets/burger1.png",
+        alt: "Enchilade",
+        productName: "Enchilade",
+        starCount: 5.0,
+        price: 25.50
+    },
+    {
+        image: "/assets/burger1.png",
+        alt: "Green Beans",
+        productName: "Green Beans",
+        starCount: 4.9,
+        price: 12.00
+    },
+    {
+        image: "/assets/burger1.png",
+        alt: "Pizza",
+        productName: "Pizza",
+        starCount: 5.0,
+        price: 18.50
+    },
+    {
+        image: "/assets/burger1.png",
+        alt: "Chicken Pot Pie",
+        productName: "Chicken Pot Pie",
+        starCount: 4.9,
+        price: 25.00
+    },
+    {
+        image: "/assets/burger1.png",
+        alt: "Green Salad",
+        productName: "Green Salad",
+        starCount: 4.9,
+        price: 15.00
+    },
+    
+]
+
+export const servicesItems = [
+    {
+        icon: MapPin ,
+        serviceName: "QualityFull Food",
+        serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur adipisicing"
+    },
+    {
+        icon: MapPin ,
+        serviceName: "Healthy Food",
+        serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quaerat sit amet consectetur adipisicing"
+    },
+    {
+        icon: MapPin ,
+        serviceName: "Fast Delivery",
+        serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quaerat similique harum Quaerat similique harum"
     },
 ]

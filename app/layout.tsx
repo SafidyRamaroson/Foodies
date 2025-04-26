@@ -13,7 +13,7 @@ const roboto = Roboto({
 
 
 export const metadata: Metadata = {
-  title: "Quizz Mind",
+  title: "Foodies",
 };
 
 export default function RootLayout({

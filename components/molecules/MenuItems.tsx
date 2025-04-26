@@ -1,16 +1,26 @@
 "use client";
 
-import { menuItems as MenuItemsData } from "@/data";
+import { cn } from "@/utils/tailwind";
 import Link from "next/link";
 
+type Props = {
+    items: {
+        label: string;
+        url: string
+    }[],
+    showSidebar?: boolean;
+}
 
-export function MenuItems() {
+export function MenuItems({
+    items,
+    showSidebar = false
+}: Props) {
     return (
-        <ul className="flex flex-row gap-16">
-            {MenuItemsData?.map((menuItem, idx) => {
+        <ul className={cn("flex flex-row gap-16",{ "flex-col p-4 gap-4 mt-4": showSidebar })}>
+            {items?.map((item, idx) => {
                 return (
-                    <Link href={menuItem.url} key={menuItem.label + idx}>
-                        <li className="font-semibold text-base">{menuItem.label}</li>
+                    <Link href={item.url} key={item.label + idx}>
+                        <li className="font-semibold text-base">{item.label}</li>
                     </Link>
                 )
             })}

@@ -1,14 +1,28 @@
 "use client";
 
-import { Header } from "@/components/organisms/Header";
-import { HeroSection } from "@/components/organisms/HeroSection";
+import { 
+    ContactTemplate,
+    FooterTemplate,
+    HeroTemplate,
+    HowToWorkTemplate,
+    MostPopularFoodsTemplate,
+    OurServicesTemplate,
+    SubcriberTemplate,
+    TestimonialsTemplate
+} from "@/components/templates";
 
 
 export default function IndexPage() {
     return (
         <>
-            <Header />
-            <HeroSection />
+            <HeroTemplate />
+            <ContactTemplate />
+            <MostPopularFoodsTemplate />
+            <OurServicesTemplate />
+            <HowToWorkTemplate />
+            <TestimonialsTemplate />
+            <SubcriberTemplate />
+            <FooterTemplate />
         </>
     )
 }

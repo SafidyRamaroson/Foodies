@@ -5,8 +5,8 @@ import { Button } from "../ui/button";
 
 export function OrderButton(){
     return(
-        <Link href="#">
-            <Button size="lg" className="text-white text-2xl font-semibold p-8 rounded-md">
+        <Link href="#" className="max-sm:w-full">
+            <Button size="lg" className="text-white text-2xl max-sm:text-lg font-semibold p-8 rounded-md max-sm:w-full">
                 Order Now
             </Button>
         </Link>

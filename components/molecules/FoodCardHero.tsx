@@ -7,8 +7,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export function FoodCardHero(){
     return(
-        <div className="h-fit w-48 rounded-3xl flex flex-col justify-center items-center -ml-28 p-4 bg-white z-50 shadow-[-10px_0px_20px_-10px_hsl(0,0%,0%,0.15)]">
-            <Image src={BurgerImage} alt="Food Image" className="mx-auto -mt-20 size-44 object-cover p-2 drop-shadow-xl"/>
+        <div className="h-fit w-48 max-sm:w-36 rounded-3xl flex flex-col justify-center items-center -ml-28 max-sm:-ml-16 p-4 shadow-[-10px_0px_20px_-10px_hsl(0,0%,0%,0.15)] bg-white">
+            <Image src={BurgerImage} alt="Food Image" className="mx-auto -mt-20 object-cover p-2 drop-shadow-xl"/>
             <div className="flex flex-col items-center gap-1">
                 <h2 className="font-bold">Food Name</h2>
                 <p>Mushroom sauce</p>
