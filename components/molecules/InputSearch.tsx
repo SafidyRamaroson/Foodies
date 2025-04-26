@@ -3,11 +3,9 @@
 import { Search } from "lucide-react";
 import { Input } from "../ui/input";
 import { FoodCart } from "./FoodCart";
-import { useCart } from "@/contexts/CartContext";
 
 export function InputSearch() {
 
-    const { items,cartTotal, removeFromCart, increaseQuantity, descreaseQuantity }=  useCart();
     return (
         <div className="shadow-[0_5px_20px_0_hsl(0,0%,0%,0.15)] p-2 rounded-md flex flex-row gap-4 items-center mx-4">
             <div className="flex flex-row items-center gap-4 relative w-full">
