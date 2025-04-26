@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import {  Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "@/styles/globals.css";
+import { CartProvider } from "@/contexts/CartContext";
 
 
 const roboto = Roboto({
@@ -18,14 +19,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
 
       <body
         className={`${roboto.variable} antialiased flex flex-col items-center`}
       >
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

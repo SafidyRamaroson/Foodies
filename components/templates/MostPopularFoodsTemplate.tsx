@@ -5,10 +5,20 @@ import { MostPopularFoods } from "../organisms";
 import { Button } from "../ui/button";
 import { SectionHeader } from "../atoms";
 import { popularFoods } from "@/data";
+import { useCart } from "@/contexts/CartContext";
 
 export function MostPopularFoodsTemplate() {
+    const { addToCart } = useCart();
     const handleAddToCart = (productName: string) => {
-        alert("Adding to cart" + productName);
+        const productToAdd = popularFoods?.find(food => food.productName === productName);
+
+        if (productToAdd) {
+            addToCart({
+                name: productToAdd?.productName,
+                price: productToAdd?.price,
+                image: productToAdd?.image
+            })
+        }
     }
 
     return (
