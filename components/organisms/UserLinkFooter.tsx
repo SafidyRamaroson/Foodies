@@ -16,7 +16,7 @@ export function UserLinkFooter({
         <div>
             <h1 className="font-bold max-sm:text-lg text-2xl">User Link</h1>
             <ul className="space-y-3 mt-8 text-slate-400">
-                {links?.map((link, idx) => {
+                {links?.map((link) => {
                     return(
                         <Link href={link?.url} key={link.label}>
                             <li>{link?.label}</li>

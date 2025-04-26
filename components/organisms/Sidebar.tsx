@@ -1,9 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
-import Link from "next/link";
 import { InputSearch, MenuItems } from "../molecules";
-import { menuItems as menuItemsData } from "@/data";
 
 type Props = {
     items: {
@@ -24,7 +22,7 @@ export function Sidebar({ items, showSidebar, onToggle }: Props) {
                 </div>
                 <InputSearch />
                 <MenuItems
-                    items={menuItemsData}
+                    items={items}
                     showSidebar
                 />
             </div>
