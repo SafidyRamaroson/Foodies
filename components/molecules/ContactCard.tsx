@@ -3,6 +3,8 @@
 import { LucideProps } from "lucide-react";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
 import { ContactItem } from "../atoms";
+import { motion } from "motion/react";
+import { containerVariants } from "@/utils/motion";
 
 type Props = {
     items: {
@@ -13,10 +15,18 @@ type Props = {
 }
 export function ContactCard({ items }: Props) {
     return (
-        <div className="md:w-full md:mx-4 lg:mx-0 lg:w-5/6 my-24 rounded-2xl p-12 grid grid-cols-1 space-y-8 md:space-y-0 md:grid-cols-2 lg:grid-cols-3 shadow-[0_5px_15px_0px_hsl(0,0%,0%,0.15)]">
+        <motion.div
+            variants={containerVariants}
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            viewport={{
+                margin:"-100px"
+            }}
+            className="md:w-full md:mx-4 lg:mx-0 lg:w-5/6 my-24 rounded-2xl p-12 grid grid-cols-1 space-y-8 md:space-y-0 md:grid-cols-2 lg:grid-cols-3 shadow-[0_5px_15px_0px_hsl(0,0%,0%,0.15)]">
             {items?.map((item) => (
                 <ContactItem icon={item.icon} label={item.label} content={item.content} key={item.label}/>)
             )}
-        </div>
+        </motion.div>
     )
 }

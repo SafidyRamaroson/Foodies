@@ -4,6 +4,8 @@ import { ShoppingCart } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { useCart } from "@/contexts/CartContext";
 import { Fragment } from "react";
+import Image from "next/image";
+
 
 export function FoodCart() {
     const { items, itemCount, cartTotal } = useCart()
@@ -15,7 +17,7 @@ export function FoodCart() {
                 <DropdownMenu>
                     <DropdownMenuTrigger>{itemCount}</DropdownMenuTrigger>
 
-                    <DropdownMenuContent className="min-w-44 w-48">
+                    <DropdownMenuContent className="min-w-52 w-56 shadow-2xl">
                         {itemCount < 1 ? <p className="p-4">Your cart is empty</p> : (
                             <>
                                 <DropdownMenuGroup>
@@ -24,10 +26,13 @@ export function FoodCart() {
                                     {items && items?.map((item) => (
                                         <Fragment key={item.name}>
                                             <DropdownMenuItem
-                                                className="flex flex-row justify-between items-baseline">
-                                                <div className="flex flex-col">
-                                                    <DropdownMenuLabel>{item.name}</DropdownMenuLabel>
-                                                    <p className="pl-2.5">${item?.price}</p>
+                                                className="flex flex-row justify-between items-center">
+                                                <div className="flex flex-row items-center">
+                                                    <Image src={item.image as string} alt={item.name} width={40} height={20} className="rounded-md size-10 object-cover border"/>
+                                                    <div className="flex flex-col">
+                                                        <DropdownMenuLabel>{item.name}</DropdownMenuLabel>
+                                                        <p className="pl-2.5">${item?.price}</p>
+                                                    </div>
                                                 </div>
                                                 <span className="flex flex-row items-center gap-2">
                                                     x {item.quantity}

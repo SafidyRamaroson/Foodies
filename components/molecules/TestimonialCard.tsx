@@ -8,7 +8,7 @@ import UserAvatar from "@/public/assets/userAvatar.jpg";
 
 export function TestimonialCard() {
     return (
-        <div className="p-12 flex flex-col items-center rounded-3xl my-8 shadow-[0_10px_25px_0px_hsl(0,0%,0%,0.15)] relative">
+        <div className="p-12 flex flex-col items-center rounded-3xl my-8 shadow-[0_10px_25px_0px_hsl(0,0%,0%,0.15)] relative -z-20">
             <div className="flex flex-row items-center gap-4 mt-8">
                 <Image
                     src={UserAvatar}
@@ -21,10 +21,10 @@ export function TestimonialCard() {
                 </div>
             </div>
             <div className="flex flex-row my-4 bg-black">
-                <Button className="size-8 bg-primary text-white rounded-full shadow-[0_5px_20px_0_hsl(0,0%,0%,0.15)] absolute -left-4 top-1/2">
+                <Button className="size-8 bg-primary text-white rounded-full shadow-[0_5px_20px_0_hsl(0,0%,0%,0.15)] absolute -left-4 top-1/2 -z-10">
                     <ArrowLeft className="text-white" />
                 </Button>
-                <Button className="size-8 bg-primary rounded-full shadow-[0_5px_20px_0_hsl(0,0%,0%,0.15)] absolute -right-4 top-1/2">
+                <Button className="size-8 bg-primary rounded-full shadow-[0_5px_20px_0_hsl(0,0%,0%,0.15)] absolute -right-4 top-1/2 -z-10">
                     <ArrowRight className="text-white" />
                 </Button>
             </div>

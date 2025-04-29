@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "@/styles/globals.css";
 import { CartProvider } from "@/contexts/CartContext";
+import { Suspense } from "react";
 
 
 const roboto = Roboto({
@@ -26,9 +27,11 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} antialiased flex flex-col items-center`}
       >
-        <CartProvider>
-          {children}
-        </CartProvider>
+        <Suspense fallback={<div>Loading</div>}>
+          <CartProvider>
+            {children}
+          </CartProvider>
+        </Suspense>
       </body>
     </html>
   );

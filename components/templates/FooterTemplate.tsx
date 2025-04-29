@@ -14,7 +14,7 @@ export function FooterTemplate() {
                     <Image
                         src={LogoImage}
                         alt="Logo"
-                        className="rounded-lg w-40 h-12 object-cover"
+                        className="w-12 rounded-full object-cover"
                     />
                     <p className="text-slate-400 mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum culpa consequuntur obcaecati expedita possimus, architecto id nulla consequatur veritatis soluta.</p>
                     <SocialLinksFooter socialLinks={socialsLinks} />

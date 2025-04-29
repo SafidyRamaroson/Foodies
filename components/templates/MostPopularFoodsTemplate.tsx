@@ -30,7 +30,7 @@ export function MostPopularFoodsTemplate() {
             <MostPopularFoods items={popularFoods} onAddToCartButton={handleAddToCart} />
             <Button
                 size="lg"
-                className="rounded-full p-8 max-sm:text-lg text-2xl text-white font-semibold my-8">
+                className="bg-gradient-to-r from-orange-500 to-red-500 rounded-full p-8 max-sm:text-lg text-2xl text-white font-semibold my-8">
                 See More Product
                 <ArrowRight className="bg-white text-primary w-36" />
             </Button>

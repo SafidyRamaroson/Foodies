@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { TestimonialCard } from "../molecules";
-import BurgerImage from "@/public/assets/burger1.png";
+import ChickenImage from "@/public/assets/chicken.png";
 import { SectionHeader } from "../atoms";
 
 export function TestimonialsTemplate() {
@@ -15,9 +15,9 @@ export function TestimonialsTemplate() {
             <div className="grid max-sm:grid-cols-1 grid-cols-[2fr_1fr] gap-16 w-full place-items-center">
                 <TestimonialCard />
                 <Image
-                    src={BurgerImage}
+                    src={ChickenImage}
                     alt="Burger Image"
-                    className="w-full rounded-full object-cover"
+                    className="w-full object-cover"
                 />
             </div>
         </div>

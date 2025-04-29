@@ -16,3 +16,4 @@ export * from "@/components/molecules/AddToCartButton";
 export * from "@/components/molecules/FoodCardHero";
 export * from "@/components/molecules/SubcriberHeader";
 export * from "@/components/molecules/SocialLinksFooter";
+export * from "@/components/molecules/StepCard";
