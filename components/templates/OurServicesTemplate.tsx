@@ -3,8 +3,6 @@
 import { OurServices } from "../molecules";
 import { SectionHeader } from "../atoms";
 import { servicesItems } from "@/data";
-import { motion } from "motion/react";
-import { containerVariants } from "@/utils/motion";
 
 export function OurServicesTemplate(){
     return (

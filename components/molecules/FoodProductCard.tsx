@@ -6,7 +6,7 @@ import { AddToCartButton } from "@/components/molecules";
 import { useCart } from "@/contexts/CartContext";
 import { Minus, Plus } from "lucide-react";
 import { motion } from "motion/react";
-import { childVariants, fadeInVariants } from "@/utils/motion";
+import { childVariants } from "@/utils/motion";
 
 type Props = {
     image: string;

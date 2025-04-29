@@ -1,8 +1,5 @@
 "use client";
 
-import HeroScreenShootImage from "@/public/assets/heroScreenShoot.png";
-import ChickenImage from "@/public/assets/chicken.png";
-import Image from "next/image";
 import { SectionHeader } from "../atoms";
 import { StepsList } from "../organisms/StepsList";
 

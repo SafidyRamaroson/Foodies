@@ -1,8 +1,8 @@
 "use client";
 
-import { fadeInLeftVariants, fadeInScaleVariants, slideOutVariants } from "@/utils/motion";
+import { fadeInLeftVariants, fadeInScaleVariants } from "@/utils/motion";
 import { motion } from "motion/react";
-slideOutVariants
+
 
 type Props = {
     title: string;
