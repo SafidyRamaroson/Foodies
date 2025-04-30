@@ -4,10 +4,10 @@ import { motion } from "motion/react";
 import { HeroSubTitle, HeroTitle } from "../atoms";
 import { BikeDelivery, FoodCardHero, HeroButtonsCTA } from "../molecules";
 import { containerVariants } from "@/utils/motion";
+import { foodsHero } from "@/data";
 
 
 export function HeroSection() {
-    const foodsHero = Array(4).fill(0);
     return (
         <div className="w-5/6 grid grid-cols-1 md:grid-cols-2">
             <div>
@@ -44,7 +44,8 @@ export function HeroSection() {
                             margin: "-100px"
                         }}
                         className="grid grid-cols-2 row gap-x-24 gap-y-16 pt-12 z-10">
-                        {foodsHero.map((_, idx) => <FoodCardHero key={idx} />)}
+                        {foodsHero.map((food, idx) => <FoodCardHero
+                            alt={food.alt} image={food.image} price={food.price} productName={food.productName} key={idx} />)}
                     </motion.div>
                 </motion.div>
             </motion.div>

@@ -110,23 +110,50 @@ export const popularFoods = [
         starCount: 4.9,
         price: 15.00
     },
-    
+
 ]
 
 export const servicesItems = [
     {
-        icon: MapPin ,
+        icon: MapPin,
         serviceName: "QualityFull Food",
         serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing sit amet consectetur adipisicing"
     },
     {
-        icon: MapPin ,
+        icon: MapPin,
         serviceName: "Healthy Food",
         serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quaerat sit amet consectetur adipisicing"
     },
     {
-        icon: MapPin ,
+        icon: MapPin,
         serviceName: "Fast Delivery",
         serviceDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quaerat similique harum Quaerat similique harum"
     },
+]
+
+export const foodsHero = [
+    {
+        image: "/assets/burger1.png",
+        alt: "Burger",
+        productName: "Burger",
+        price: 20
+    },
+    {
+        image: "/assets/PizzaRB.png",
+        alt: "pizza",
+        productName: "Pizza",
+        price: 18
+    },
+    {
+        image: "/assets/FoodCombo.png",
+        alt: "FoodCombo",
+        productName: "FoodCombo",
+        price: 18
+    },
+    {
+        image: "/assets/Cake.png",
+        alt: "Cake",
+        productName: "Cake",
+        price: 8
+    }
 ]
